@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: eureka1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xmccjyqs.com:7001/eureka/ #所有微服务都需要在eureka注册，所以eureka注册中心一定保证高可用,开启多个，然后让服务端相互注册，客户端都注册就可以了
+    register-with-eureka: false #false表示不向注册中心注册自己。
+    fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务

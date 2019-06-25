@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: provider
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xmccjyqs.com:7001/eureka/ #,http://xmccjyqs.com:7002/eureka/
+
+server:
+  port: 8003
